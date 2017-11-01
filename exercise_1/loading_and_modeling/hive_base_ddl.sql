@@ -126,11 +126,10 @@ STORED AS TEXTFILE
 LOCATION "/user/w205/hospital_compare/measures"
 ;
 
-DROP TABLE surveys_responses;
+DROP TABLE survey_responses;
 
-CREATE EXTERNAL TABLE surveys_responses
+CREATE EXTERNAL TABLE survey_responses
 (
-
 provider_number string,
 hospital_name string,
 address string,
@@ -212,5 +211,5 @@ WITH SERDEPROPERTIES (
   "escapeChar" = '\\'
 )
 STORED AS TEXTFILE
-LOCATION "/user/w205/hospital_compare/surveys_responses"
+LOCATION "/user/w205/hospital_compare/survey_responses"
 ;

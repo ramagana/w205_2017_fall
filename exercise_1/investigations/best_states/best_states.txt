@@ -1,0 +1,24 @@
+WHICH STATES ARE THE MODEL FOR HIGH-QUALITY CARE?
+
+Below is a table is showing the top 10 ranked states aggregated from the provider level and  ordered by average_score. 
+ average_score is a composite score of all the features averaging across a normalized corrected score for each provider
+ for each numeric procedure metrics. It is normalize as it is divided by the maximum amount forcing each value
+ per provider metric to be between 0 and 1. Moreover, it is corrected as it is not ideal for all metrics to have high
+ scores, e.g. Mortality rate after surgery, as such those measures that have an ideal low number are normalized by
+ min(score for measure_id)/(score measure_id per provider) and if the high score is ideal it is normalized by
+ (score measure_id per provider)/max(score for measure_id)
+
+State	average_score
+VI	0.5234348532645368
+MP	0.5183462228110447
+VT	0.47086949840207104
+MA	0.4703346646959361
+MD	0.470281741461026
+VA	0.46811757763229467
+FL	0.46718823760539635
+NH	0.4660689117327347
+OH	0.4618585016889029
+ME	0.46182355670733405
+
+Given that the above is an average across all data available for each provider across the different effective care and
+readmission procedures.  We can conclude that these states on average are the 10 best models for quality care.

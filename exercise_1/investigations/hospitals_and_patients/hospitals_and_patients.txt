@@ -1,0 +1,14 @@
+ARE THE AVERAGE SCORES FOR HOSPITAL QUALITY OR PROCEDURAL VARIABLITY CORRELATED WITH PATIENT SURVEY RESPONSES?
+
+Correlation between average quality-care scores: 	0.32419394743840807
+Correlation between average procedural variabiliy:	-0.13605034488582465
+
+To calculation the above correlations I used the overall_rating_of_hospital_performance_rate as a measure to test correlational 
+from the patient survey results for each provider.   As in the first question the quality-care scores are grouped by proveder, and 
+as in the third question procedural is grouped at the procedural measure level.  In any case, niether is strongly correlated with 
+the overall_rating_of_hospital_performance_rate from the patient survey.  However, it should be noted that it is not intuitive to 
+looke for correlation get between the procedural variability which is at the procedure level and the survey responses that are averages 
+at the provider level. 
+
+
+

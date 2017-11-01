@@ -1,0 +1,27 @@
+
+WHICH PROVIDERS ARE THE MODEL FOR HIGH-QUALITY CARE?
+
+Below is a table is showing the top 10 ranked hospitals ordered by average_score.  average_score is a composite score
+of all the features averaging across a normalized corrected score for each provider for each numeric procedure metrics.
+It is normalize as it is divided by the maximum amount forcing each value per provider metric to be between 0 and 1.  
+Moreover, it is corrected as it is not ideal for all metrics to have high scores, e.g. Mortality rate after surgery, 
+as such those measures that have an ideal low number are normalized by min(score for measure_id)/(score measure_id per provider)
+and if the high score is ideal it is normalized by (score measure_id per provider)/max(score for measure_id)   
+
+hospital_name			           provider_id  average_score
+HANOVER HOSPITAL				171365	0.92
+POPLAR COMMUNITY HOSPITAL			271300	0.92
+CHARLESTON SURGICAL HOSPITAL			510091	0.75
+HILLSBORO COMMUNITY HOSPITAL			171357	0.7492810473812197
+SCHLEICHER COUNTY MEDICAL CENTER		451304	0.705
+PIONEER MEDICAL CENTER				271313	0.7019480656202258
+HODGEMAN COUNTY HEALTH CENTER			171369	0.6992481246138247
+ST LUKE'S MCCALL				131312	0.6934535420066484
+TRINITY HOSPITAL 				271341	0.6660406048366874
+NORTHERN COCHISE COMMUNITY HOSPITAL, INC.	031302	0.6641723466521223
+
+Given that the above is an average across all data available for each provider across the different effective care and 
+readmission procedures.  We can conclude that these hospitals are the 10 best models for quality care.
+
+
+
